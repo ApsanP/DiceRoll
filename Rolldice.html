@@ -58,10 +58,11 @@
   </head>
   <body>
     <img
-      src="https://miro.medium.com/v2/resize:fit:752/1*i6X4IE7-71igE0fWTgv-Rg.png"
-      alt="ERROR OCCURED"
-      width="600"
       height="800"
+      src="https://cdn.shopify.com/s/files/1/1066/8352/files/Mystery_D100.gif?v=1693929607"
+      alt="ERROR OCCURED"
+      width="200"
+      height="100"
     />
     <h1>Dice Roller</h1>
 
@@ -83,9 +84,9 @@
         const selectedDiceType = parseInt(diceTypeElement.value);
 
         if (isNaN(selectedDiceType) || selectedDiceType < 1) {
-          resultElement.textContent = "Please enter a valid number of faces.";
+          resultElement.textContent = "HAHAHAH YA DONE IT WRONG YA DUMBIE, TRY AGAIN WOULD YA!!";
           return;
-            }
+        }
         const rollResult = Math.floor(Math.random() * selectedDiceType) + 1;
         resultElement.textContent = `You rolled a ${rollResult} on a ${selectedDiceType}-sided dice.`;
         console.log("hello");
